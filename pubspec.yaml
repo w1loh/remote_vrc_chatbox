@@ -1,0 +1,80 @@
+name: remote_vrc_chatbox
+
+description: for vrchat
+
+publish_to: "none"
+
+version: 0.1.0
+
+environment:
+  sdk: ">=3.1.5 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  web_socket_channel: ^2.4.0
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^11.0.0
+  url_launcher: ^6.2.1
+  path: ^1.8.0
+  intl: ^0.20.2
+  fluttertoast: ^9.1.0
+  osc: ^1.0.0
+  receive_sharing_intent: ^1.8.0
+  speech_to_text: ^7.4.0
+  shared_preferences: ^2.2.2
+  http: ^1.0.0
+  envied: ^0.5.2
+  translator: ^1.0.4+1
+  provider:
+  audioplayers: ^6.0.0
+
+dependency_overrides:
+  win32: ^6.0.0
+  path_provider_windows: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.5
+  build_runner: ^2.4.6
+  envied_generator: ^0.5.2
+
+flutter:
+  assets:
+    - assets/images/
+    - assets/se/
+  uses-material-design: true
+  fonts:
+    - family: Din
+      fonts:
+        - asset: assets\fonts\din1451alt.ttf
+    - family: NotoJP
+      fonts:
+        - asset: assets\fonts\NotoSansJP-Regular.ttf
+    - family: Murecho
+      fonts:
+        - asset: assets\fonts\Murecho-Regular.ttf
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/fg.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/fg.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: "assets/images/fg.png"
+  color_dark: "#ffffff"
+  image_dark: "assets/images/fg.png"
+  fullscreen: true
+  android_12:
+    icon_background_color: "#ffffff"
+    image: "assets/images/fg.png"
+    icon_background_color_dark: "#ffffff"
+    image_dark: "assets/images/fg.png"
